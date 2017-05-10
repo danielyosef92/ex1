@@ -1,0 +1,28 @@
+[{"user":"daniel",
+    "chanells":[
+        {
+            "Name": "history",
+            "Category": "g",
+            "Number": 1
+        },
+        {
+            "Name": "blabla",
+            "Category": "r",
+            "Number": 2
+        }
+    ]
+},
+   {"user":"f",
+    "chanells":[
+        {
+            "Name": "d",
+            "Category": "g",
+            "Number": 1
+        },
+        {
+            "Name": "a",
+            "Category": "r",
+            "Number": 2
+        }
+    ]
+}]
