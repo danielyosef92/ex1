@@ -2,27 +2,46 @@
     "chanells":[
         {
             "Name": "history",
-            "Category": "g",
-            "Number": 1
+            "Category": "A",
+            "Number": 78
         },
         {
-            "Name": "blabla",
-            "Category": "r",
-            "Number": 2
+            "Name": "Knesset",
+            "Category": "B",
+            "Number": 100
         }
     ]
 },
-   {"user":"f",
+   {"user":"yuval",
     "chanells":[
         {
-            "Name": "d",
-            "Category": "g",
-            "Number": 1
+            "Name": "history",
+            "Category": "A",
+            "Number": 78
         },
         {
-            "Name": "a",
-            "Category": "r",
-            "Number": 2
+            "Name": "government",
+            "Category": "C",
+            "Number": 99
         }
     ]
-}]
+},
+    {"user":"maya",
+    "chanells":[
+        {
+            "Name": "history",
+            "Category": "A",
+            "Number": 78
+        },
+        {
+            "Name": "Knesset",
+            "Category": "C",
+            "Number": 99
+        },
+        {
+            "Name": "government",
+            "Category": "C",
+            "Number": 99
+        }
+    ]
+}
