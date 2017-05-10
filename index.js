@@ -23,6 +23,7 @@ app.post('/isWatching',(req,res) =>{
 
 app.all('*',(req,res) =>{
     console.log("error");
+    res.send('error');
 });
 
 app.listen(port);
