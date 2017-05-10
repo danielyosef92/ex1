@@ -26,4 +26,4 @@ app.all('*',(req,res) =>{
 });
 
 app.listen(port);
-console.log('server is on, listening to ${port}');
+console.log('the server is on, listening to ${port}');
