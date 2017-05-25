@@ -1,6 +1,6 @@
 EX1- VOD chanels
 
-API- https://github.com/danielyosef92/ex1/new/master?readme=1
+API- https://github.com/danielyosef92/ex1/blob/master/README.md
 
 GitHub - https://github.com/danielyosef92/ex1
 
