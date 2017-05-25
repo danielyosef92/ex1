@@ -14,28 +14,10 @@ module.exports = class Chanel {
 
     static getChanelsOfUser(user){
         return channel.find({user:user});
-        // for (var i=0; i< chanels.length; i++){
-        //     if (chanels[i].user === user){
-        //         return channel.find({user:user});
-        //     }
-
-        // }return {"error": "the user is not found"};
-
     }
 
     static isWatching(user,name){
         return channel.find({user:user, Name:name});
-        // for (var i=0; i < chanels.length; i++){
-        //     if (chanels[i].user === user){
-        //         for (var j=0; j < chanels[i].chanells.length; j++){
-        //             if (chanels[i].chanells[j].Name === name){
-        //                 return {"yse": "the user is watching this chanel"};
-        //             }
-        //         }return {"no": "the user isnt watching this chanel"};
-        //     }return {"error": "the user is not found"};
-
-        // }
-
     }
 };
 
