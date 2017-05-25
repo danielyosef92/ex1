@@ -10,15 +10,42 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extend: true}));
 
 app.get('/getAllChanels',(req,res) => {
-    res.status(200).json(chanelsFunction.getAllChanels());
+    chanelsFunction.getAllChanels().then(
+        (channel)=>{
+            if(channel.length == false)
+                console.log("error")
+            else
+                res.json(channel);
+        }, (error)=>{
+            console.log(error);
+        });
 });
 
 app.post('/getChanelsOfUser',(req ,res) => {
-        res.status(200).json(chanelsFunction.getChanelsOfUser(req.body.user));
+    var user = req.body.user;
+    chanelsFunction.getChanelsOfUser(user).then(
+        (channel)=>{
+            if(channel.length == false)
+                console.log("error")
+            else
+                res.json(channel);
+        }, (error)=>{
+            console.log(error);
+        });
 });
 
 app.post('/isWatching',(req,res) =>{
-    res.json(chanelsFunction.isWatching(req.body.user, req.body.name));
+     var user = req.body.user,
+     name = req.body.name;
+    chanelsFunction.getChanelsOfUser(user).then(
+        (channel)=>{
+            if(channel.length == false)
+                console.log("error")
+            else
+                res.json(channel);
+        }, (error)=>{
+            console.log(error);
+        });
 });
 
 app.all('*',(req,res) =>{
